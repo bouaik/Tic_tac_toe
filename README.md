@@ -25,7 +25,7 @@
 - Tic Tac Toe is a 2 player game, each player takes a turn and chooses a spot on the board where he places his mark (X/O). The winner is the player to have 3 marks in a straight line (vertical, horizontal or diagonal).
 
 - To place your mark input a number from 1 to 9 which corresponds to the slots on the board. 
-
+ 
 - Have fun!
 
 ## Acknowledgements
