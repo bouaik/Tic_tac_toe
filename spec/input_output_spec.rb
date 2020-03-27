@@ -3,7 +3,7 @@ require_relative '../bin/main.rb'
 describe InputOutput do
   let(:player) { Player.new('tester', 'x', board) }
   let(:board) { Board.new }
-  let(:game) { TicTacToe.new() }
+  let(:game) { TicTacToe.new }
   let(:game_logic) { Gamelogic.new(game) }
 
   describe '#win_message' do

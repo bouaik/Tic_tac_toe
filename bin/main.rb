@@ -22,6 +22,7 @@ class TicTacToe
       InputOutput.your_turn(@current_player, @game_logic)
       @current_player.input_mark
       break if @game_logic.game_over(@current_player, @board)
+
       @game_logic.swap(@current_player, @player1, @player2)
     end
   end
