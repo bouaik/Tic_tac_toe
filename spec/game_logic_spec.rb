@@ -1,22 +1,19 @@
-# frozen_string_literal: true
 require_relative '../lib/game_logic.rb'
 require_relative '../bin/main.rb'
 describe Gamelogic do
-  let(:game) { TicTacToe.new}
-  let(:player) { Player.new("tester", 'x', board)}
-  let(:board) {Board.new}
-  let(:game_logic) { Gamelogic.new(game)}
+  let(:game) { TicTacToe.new }
+  let(:player) { Player.new('tester', 'x', board) }
+  let(:board) { Board.new }
+  let(:game_logic) { Gamelogic.new(game) }
 
   describe '#initialize' do
     it 'initializes a new game' do
-
-       expect(game_logic.nil?).to eq(false)
+      expect(game_logic.nil?).to eq(false)
     end
   end
 
   describe '#game_over' do
     it 'returns false when neither win nor draw are ture' do
-      
       expect(game_logic.game_over(player, board)).to eq(false)
     end
   end
@@ -35,7 +32,6 @@ describe Gamelogic do
 
   describe '#swap' do
     it 'swaps the current player' do
-     
     end
   end
 end

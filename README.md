@@ -24,6 +24,11 @@
 - Download the project to your machine
 - Inside the terminal go into project folder and run ./main.rb
 
+## Testing
+
+- Run `gem install rspec` on the command line to install the RSpec gem.
+- From the root project directory run `rspec spec/*` to test all spec files at once, or `rspec spec/name_of_file_you_want_to_test`.
+
 ### Game Instructions
 
 - Tic Tac Toe is a 2 player game, each player takes a turn and chooses a spot on the board where he places his mark (X/O). The winner is the player to have 3 marks in a straight line (vertical, horizontal or diagonal).
