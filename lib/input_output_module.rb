@@ -13,7 +13,7 @@ module InputOutput
   end
 
   def self.choose_spot(_player)
-    gets.chomp.to_i
+    STDIN.gets.chomp.to_i
   end
 
   def self.input_error
