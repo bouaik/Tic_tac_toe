@@ -8,9 +8,9 @@ class TicTacToe
     @game_logic = Gamelogic.new(self)
     @board = Board.new
     puts 'Player 1 enter your name'
-    @player1 = Player.new(gets.chomp, 'x', @board)
+    @player1 = Player.new(STDIN.gets.chomp, 'x', @board)
     puts 'Player 2 enter your name'
-    @player2 = Player.new(gets.chomp, 'o', @board)
+    @player2 = Player.new(STDIN.gets.chomp, 'o', @board)
     @players = [@player1, @player2]
     @current_player = @players.sample
     puts 'On your turn, choose a free spot on the board with numbers 1-9'
@@ -27,6 +27,3 @@ class TicTacToe
     end
   end
 end
-
-game = TicTacToe.new
-game.play

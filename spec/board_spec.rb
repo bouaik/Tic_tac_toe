@@ -1,19 +1,11 @@
-# frozen_string_literal: true
 require_relative '../lib/game_logic.rb'
 
-
 describe Board do
-  let (:board) { Board.new }
+  let(:board) { Board.new }
 
   describe '#initialize' do
     it 'creates an instance of a board' do
       expect(board.nil?).to eq(false)
-    end
-  end
-
-  describe '#render' do
-    it 'renders the board on the console' do
-      expect(InputOutput.render_board(board)).to eq(p)
     end
   end
 

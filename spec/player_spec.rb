@@ -1,4 +1,3 @@
-# frozen_string_literal: true
 require_relative '../lib/game_logic.rb'
 
 describe Player do
@@ -24,18 +23,11 @@ describe Player do
     end
   end
 
-  describe '#choose_spot' do
-    it 'asks the player for input' do
-      allow($stdin).to receive(:gets).and_return(5)
-      player_input = $stdin.gets
-      expect(player_input).to eq(5)
-    end
-  end
-
   describe '#valid?' do
     it 'checks if the user has given a valid input' do
       expect(player.valid?(5)).to be true
     end
+
     it 'evaluates to false when an invalid input is chosen' do
       expect(player.valid?(100)).to be false
     end
