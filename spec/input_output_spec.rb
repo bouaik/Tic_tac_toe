@@ -3,7 +3,7 @@ require_relative '../bin/main.rb'
 describe InputOutput do
   let(:player) { Player.new('tester', 'x', board) }
   let(:board) { Board.new }
-  let(:game) { TicTacToe.new }
+  let(:game) { TicTacToe.new() }
   let(:game_logic) { Gamelogic.new(game) }
 
   describe '#win_message' do
@@ -19,10 +19,9 @@ describe InputOutput do
   end
 
   describe '#choose_spot' do
-    it 'returns 0 if no input' do
+    it 'asks the player for input' do
       allow($stdin).to receive(:gets).and_return(5)
-      input = $stdin.gets
-      expect(input).to eq(5)
+      expect($stdin.gets).to eq(5)
     end
   end
 
