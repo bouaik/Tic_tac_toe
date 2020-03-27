@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 require_relative '../lib/game_logic.rb'
 require_relative '../bin/main.rb'
-describe Game_logic do
+describe Gamelogic do
   let(:game) { TicTacToe.new}
   let(:player) { Player.new("tester", 'x', board)}
   let(:board) {Board.new}
-  let(:game_logic) { Game_logic.new(game)}
+  let(:game_logic) { Gamelogic.new(game)}
 
   describe '#initialize' do
     it 'initializes a new game' do
